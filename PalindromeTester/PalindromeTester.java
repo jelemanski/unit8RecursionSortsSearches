@@ -21,7 +21,25 @@ public class PalindromeTester
       {
          System.out.println ("Enter a potential palindrome:");
          str = s.nextLine();
+         if( isPalendrome(str) == true)
+         {
+            System.out.println("Enter a potential palindrome:");
+            str = s.nextLine();
+            if( isPalendrome(str) == true)
+            {
+                System.out.println("That string IS a palendrome.");
+            }
+            else
+            {
+                System.out.println("that string aint no palendrome.");
+            }
+            System.out.println();
+            System.out.print("Test another drome? (y/n)");
+            another = s.nextLine();
+        }
+    }
 
+         
          left = 0;
          right = str.length() - 1;
 
